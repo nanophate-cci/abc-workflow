@@ -1,0 +1,27 @@
+version: 2.1
+
+
+jobs:
+  job:
+    docker:
+      - image: cimg/base:current
+    resource_class: small
+    steps:
+      - checkout
+      - run:
+          name: Running
+          command: echo "running"
+
+
+
+workflows:
+  version: 2
+​  C:
+    jobs:
+      - job
+​  B:
+    jobs:
+      - job
+  A:
+    jobs:
+      - job
