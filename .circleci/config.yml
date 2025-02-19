@@ -9,6 +9,14 @@ jobs:
       - run: |
           # echo Hello, World!
 
+  build:
+    docker:
+      - image: cimg/base:current
+    steps:
+      - checkout
+      - run: |
+          # echo Hello, World!
+
   test:
     docker:
       - image: cimg/base:current
@@ -23,7 +31,7 @@ workflows:
       - test
   B:
     jobs:
-      - job
+      - build
   A:
     jobs:
       - job
