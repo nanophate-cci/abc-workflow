@@ -34,7 +34,8 @@ workflows:
       - build
   A:
     jobs:
-      - build
+      - build:
+          serial-group: job-group
       - test:
           serial-group: job-group
       - job:
@@ -46,3 +47,4 @@ workflows:
           serial-group: job-group
           requires:
             - test
+            - build
