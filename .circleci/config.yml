@@ -34,8 +34,12 @@ workflows:
       - build
   A:
     jobs:
-      - build:
-          serial-group: deploy-group
+      - build
       - test:
-          serial-group: deploy-group
-      - job
+          requires:
+            - build
+      - job:
+          serial-group: job-group
+          requires:
+            - test
+            - build
