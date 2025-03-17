@@ -42,4 +42,8 @@ workflows:
           serial-group: job-group
           requires:
             - test
-            - build
+      - job:
+          name: deploy
+          serial-group: job-group
+          requires:
+            - test
