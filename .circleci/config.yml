@@ -9,7 +9,7 @@ jobs:
       - run: |
           # echo Hello, World!
           cat /sys/fs/cgroup/memory.peak
-          sleep 1
+          sleep 100
 
   build:
     docker:
