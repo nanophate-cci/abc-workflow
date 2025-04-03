@@ -8,7 +8,7 @@ jobs:
       - checkout
       - run: |
           # echo Hello, World!Q!
-          sleep 100
+          sleep 10
 
   build:
     docker:
@@ -17,7 +17,7 @@ jobs:
       - checkout
       - run: |
           # echo Hello, World!
-          sleep 100
+          sleep 5
 
   test:
     docker:
