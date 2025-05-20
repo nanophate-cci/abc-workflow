@@ -37,6 +37,6 @@ workflows:
   A:
     jobs:
       - build
-      - job:
-          requires:
-            - build
+#      - job:
+#          requires:
+#            - build
