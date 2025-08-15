@@ -17,7 +17,7 @@ jobs:
       - checkout
       - run: |
           # echo Hello, World!!
-          sleep 600
+          sleep 500
 
   test:
     docker:
