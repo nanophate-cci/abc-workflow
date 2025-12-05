@@ -18,6 +18,9 @@ jobs:
       - image: cimg/base:current
     steps:
       - checkout
+      - add_ssh_keys:
+          fingerprints:
+            - "SHA256:ppSeqivtyonaXj3iW5uKk2c/2M0JhtCU797RA+OqDwA"
       - run: |
           # echo Hello, World!!
           sleep 500
