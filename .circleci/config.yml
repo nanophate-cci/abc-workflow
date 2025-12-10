@@ -9,9 +9,6 @@ jobs:
       - run: |
           # echo Hello, World!aaa
           sleep 5
-      - add_ssh_keys:
-          fingerprints:
-            - "SHA256:ppSeqivtyonaXj3iW5uKk2c/2M0JhtCU797RA+OqDwA"
 
   build:
     docker:
@@ -23,7 +20,7 @@ jobs:
             - "SHA256:ppSeqivtyonaXj3iW5uKk2c/2M0JhtCU797RA+OqDwA"
       - run: |
           # echo Hello, World!!
-          sleep 500
+          sleep 60
 
   test:
     docker:
