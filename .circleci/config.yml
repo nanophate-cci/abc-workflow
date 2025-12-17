@@ -29,11 +29,19 @@ jobs:
       - checkout
       - run: |
           # echo Hello, World!
+  ubuntu:
+    docker:
+      - image: ubuntu:latest
+    steps:
+      - checkout
+      - run: |
+          # echo Hello, World!
 
 workflows:
   C:
     jobs:
       - test
+      - ubuntu
   B:
     jobs:
       - build
