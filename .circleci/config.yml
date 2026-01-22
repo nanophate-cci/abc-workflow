@@ -6,6 +6,7 @@ jobs:
       - image: cimg/base:current
     steps:
       - checkout
+      - setup-remote-docker
       - run: |
           # echo Hello, World!aaa
           sleep 3
