@@ -3,7 +3,7 @@ version: 2.1
 jobs:
   job:
     docker:
-      - image: cimg/base:current
+      - image: docker:stable-git
     steps:
       - checkout
       - setup_remote_docker
