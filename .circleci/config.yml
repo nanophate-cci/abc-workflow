@@ -21,7 +21,7 @@ jobs:
             - "SHA256:ppSeqivtyonaXj3iW5uKk2c/2M0JhtCU797RA+OqDwA"
       - run: |
           # echo Hello, World!!
-          sleep 6
+          sleep 5
 
   test:
     docker:
