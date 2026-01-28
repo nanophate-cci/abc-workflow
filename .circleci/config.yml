@@ -4,6 +4,7 @@ jobs:
   job:
     docker:
       - image: cimg/base:current
+    resource_class: small
     steps:
       - checkout
       - run: |
@@ -13,6 +14,7 @@ jobs:
   build:
     docker:
       - image: cimg/base:current
+    resource_class: small
     steps:
       - checkout
       - add_ssh_keys:
@@ -25,6 +27,7 @@ jobs:
   test:
     docker:
       - image: cimg/base:current
+    resource_class: small
     steps:
       - checkout
       - run: |
@@ -33,6 +36,7 @@ jobs:
     docker:
       - image: cimg/base:current
       #- image: ubuntu:latest
+    resource_class: small
     steps:
       - checkout
       - run: |
