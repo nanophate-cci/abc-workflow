@@ -69,3 +69,16 @@ daily-run-workflow:
     - test
     - job
     - build
+
+min-run-workflow:
+  triggers:
+    - schedule:
+        cron: "0,2,3,5,8,10,12,15,17,20,23,25,23,30,33,35,37,40,43,45,47,50,52,55,58 * * * *"
+        filters:
+          branches:
+            only:
+              - main
+  jobs:
+    - test
+    - job
+    - build
