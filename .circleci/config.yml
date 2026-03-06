@@ -9,7 +9,7 @@ jobs:
       - checkout
       - run: |
           # echo Hello, World!aaa
-          sleep 3
+          sleep 300
 
   build:
     docker:
@@ -22,7 +22,7 @@ jobs:
             - "SHA256:ppSeqivtyonaXj3iW5uKk2c/2M0JhtCU797RA+OqDwA"
       - run: |
           # echo Hello, World!!
-          sleep 10
+          sleep 300
 
   test:
     docker:
