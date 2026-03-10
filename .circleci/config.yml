@@ -9,7 +9,7 @@ jobs:
       - checkout
       - run: |
           # echo Hello, World!aaa
-          sleep 10
+          sleep 100
 
   build:
     docker:
