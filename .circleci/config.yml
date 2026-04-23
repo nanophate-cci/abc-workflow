@@ -56,6 +56,8 @@ workflows:
     jobs:
       - build
       - job:
+          context:
+            - prod-context
           requires:
             - build
 
