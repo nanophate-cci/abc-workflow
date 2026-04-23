@@ -9,7 +9,9 @@ jobs:
       - checkout
       - run: |
           # echo Hello, World!aaaaajj
-          sleep 200
+          echo $prod
+          echo PROD_VAR
+          sleep 60
 
   build:
     docker:
