@@ -10,9 +10,6 @@ jobs:
       - run: |
           set -euo pipefail
           # echo Hello, World!aaaaajj
-          echo $prod
-          echo $PROD_VAR
-          sleep 60
 
   build:
     docker:
