@@ -34,7 +34,7 @@ jobs:
           # echo Hello, World!
   ubuntu:
     docker:
-      - image: cimg/base:current
+      - image: 22.22-alpine3.22
       #- image: ubuntu:latest
     resource_class: small
     steps:
